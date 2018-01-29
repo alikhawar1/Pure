@@ -3,8 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'npm --version'
+                sh 'npm install'
+                sh 'npm rebuild'
             }
+        stage('test') {
+                sh 'npm test'
         }
+       }
     }
 }
