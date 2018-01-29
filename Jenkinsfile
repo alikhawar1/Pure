@@ -1,14 +1,16 @@
 pipeline {
-    agent { any 'node:6.9.5' }
+    agent any
+
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                 sh 'npm install'
-                sh 'npm rebuild'
             }
-        stage('test') {
-                sh 'npm test'
         }
-       }
+        stage('Test') {
+            steps {
+                echo 'npm test'
+            }
+        }
+        
     }
-}
