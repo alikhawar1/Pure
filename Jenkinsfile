@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'node:6.9.5' }
+    agent { any 'node:6.9.5' }
     stages {
         stage('build') {
             steps {
