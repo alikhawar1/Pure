@@ -1,5 +1,5 @@
 pipeline {
-    agent { nodeJs 'node:6.9.5' }
+    agent { nodejs 'node:6.9.5' }
     stages {
         stage('build') {
             steps {
