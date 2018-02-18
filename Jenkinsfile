@@ -1,5 +1,5 @@
 pipeline {
-    agent { any 'node:6.9.5' }
+    agent { any }
     stages {
         stage('Build') {
             when {
