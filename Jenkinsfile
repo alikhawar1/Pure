@@ -6,7 +6,7 @@ pipeline {
     branch 'develop'
 }
             steps {
-               echo 'npm install'
+               sh 'npm install'
             }
         }
         stage('Test') {
