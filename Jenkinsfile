@@ -2,6 +2,9 @@ pipeline {
     agent { any 'node:6.9.5' }
     stages {
         stage('Build') {
+            when {
+    expression { return token ==~ /(?i)(Y|YES|T|TRUE|ON|RUN)/ }
+}
             steps {
                echo 'npm install'
             }
