@@ -20,8 +20,7 @@ pipeline {
             ecdmItestRun(
                 vmIp : "${params.vmIp}",
                 itestPath : "itests/restapi/dps",
-                itestName : "DPS",
-                additionalArgs : "-Prun-its,run-its-irvine"
+                itestName : "DPS"
                 )
         }
                echo 'chmod +x test'
