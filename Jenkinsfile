@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             when {
-    branch 'master'
+    branch 'develop'
 }
             steps {
                echo 'npm install'
