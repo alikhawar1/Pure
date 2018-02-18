@@ -6,7 +6,7 @@ pipeline {
     branch 'develop'
 }
             steps {
-               sh "bower install'
+               sh "bower install"
                 sh "npm install"
                 sh "npm build"
             }
