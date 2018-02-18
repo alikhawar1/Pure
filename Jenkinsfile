@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Test') {
            steps {
+               sh 'chmod +x index.js'
               sh './index.js'
             }
         }
